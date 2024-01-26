@@ -1,5 +1,6 @@
 // SignUp.jsx
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { useFormik } from 'formik';
 import zxcvbn from 'zxcvbn';
 import PasswordStrengthMeter from '../components/passStrengthMeter/PasswordStrengthMeter';
@@ -133,7 +134,7 @@ const SignUp = () => {
           Sign Up
         </SignUpButton>
       </SignUpForm>
-      <SignInLink href="/signin">Sign In</SignInLink>
+      <SignInLink as={Link} to="/signin">Sign In</SignInLink>
     </SignUpContainer>
   );
 };

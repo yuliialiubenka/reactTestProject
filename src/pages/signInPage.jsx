@@ -1,5 +1,6 @@
 // signInPage.jsx
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { useFormik } from 'formik';
 import {
   SignInContainer,
@@ -86,8 +87,8 @@ const SignIn = () => {
           Sign In
         </SignInButton>
       </SignInForm>
-      <SignUpLink href="/signup">Sign Up</SignUpLink>
-      <ForgotPasswordLink href="/forgotpassword">Forgot password?</ForgotPasswordLink>
+      <SignUpLink as={Link} to="/signup">Sign Up</SignUpLink>
+      <ForgotPasswordLink as={Link} to="/forgotpassword">Forgot password?</ForgotPasswordLink>
     </SignInContainer>
   );
 };

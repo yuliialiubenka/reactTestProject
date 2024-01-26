@@ -9,7 +9,7 @@ import ForgotPassPage from './pages/forgotPassPage.jsx';
 
 const App = () => {
   return (
-    <Router>
+    <Router basename="/reactTestProject">
       <Header />
       <Routes>
         <Route path="/signup" element={<SignUp />} />
